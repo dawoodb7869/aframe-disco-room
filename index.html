@@ -20,10 +20,12 @@
         <a-light type="point" color="#0f0" position="-3 3 -3" intensity="1"></a-light>
         <a-light type="point" color="#00f" position="0 3 -3" intensity="1"></a-light>
         <a-plane id="dance-floor" position="0 -0.01 -4" rotation="-90 0 0" width="5" height="5" color="#fff" hoverable></a-plane>
+
         <audio id="bg-music" src="music.mp3" autoplay loop></audio>
     </a-scene>
 
     <script>
+        
         document.querySelector('#dance-floor').addEventListener('mouseenter', function () {
             this.setAttribute('color', '#ff0');
         });
